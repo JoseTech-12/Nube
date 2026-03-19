@@ -1,7 +1,7 @@
 const { CosmosClient } = require("@azure/cosmos");
 
 const client = new CosmosClient(process.env.COSMOS_DB_CONNECTION);
-const database = client.database("mi-db");
+const database = client.database("miapp-db");
 const container = database.container("items");
 
 module.exports = async function (context, req) {
