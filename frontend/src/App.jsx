@@ -10,7 +10,7 @@ function App() {
     fetch("/api/getItems")
       .then(res => res.json())
       .then(data => setItems(data));
-  }, []);
+  }, [items]);
 
   const handleRegistrar = () => {
     fetch("/api/createItem", {
