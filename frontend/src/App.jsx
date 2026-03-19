@@ -14,8 +14,7 @@ function App() {
       <h1>Items</h1>
       {items.map(item => (
         <div key={item.id}>
-          <p>{item.id}</p>
-          <p>{item.nombre}</p>
+          <p>{item.id}: {item.nombre}</p>
         </div>
       ))}
     </div>
