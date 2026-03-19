@@ -12,3 +12,6 @@ module.exports = async function (context, req) {
         body: resources
     };
 };
+
+context.log("Connection:", process.env.COSMOS_DB_CONNECTION);
+context.log("Body:", req.body);
